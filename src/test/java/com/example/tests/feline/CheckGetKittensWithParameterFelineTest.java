@@ -11,6 +11,6 @@ public class CheckGetKittensWithParameterFelineTest {
         Feline feline = new Feline();
         Integer actualParameterKittens = feline.getKittens(3);
         Integer expected = 3;
-        assertEquals(actualParameterKittens, expected);
+        assertEquals(expected, actualParameterKittens);
     }
 }

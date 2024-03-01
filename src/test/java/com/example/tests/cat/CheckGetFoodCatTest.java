@@ -24,6 +24,6 @@ public class CheckGetFoodCatTest {
         Cat cat = new Cat(feline);
         List<String> actualFoodForCat = cat.getFood();
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
-        assertEquals(actualFoodForCat, expected);
+        assertEquals(expected, actualFoodForCat);
     }
 }

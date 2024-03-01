@@ -24,6 +24,6 @@ public class CheckGetFoodLionTest {
         Lion lion = new Lion(feline);
         List<String> actualEat = lion.getFood();
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
-        assertEquals(actualEat, expected);
+        assertEquals(expected, actualEat);
     }
 }

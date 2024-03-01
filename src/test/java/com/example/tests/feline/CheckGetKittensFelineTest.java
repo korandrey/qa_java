@@ -20,6 +20,6 @@ public class CheckGetKittensFelineTest {
         Mockito.when(feline.getKittens(1)).thenReturn(1);
         Integer actualKittens = feline.getKittens();
         Integer expected = 1;
-        assertEquals(actualKittens, expected);
+        assertEquals(expected, actualKittens);
     }
 }

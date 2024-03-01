@@ -22,6 +22,6 @@ public class CheckGetKittensLionTest {
         Mockito.when(feline.getKittens()).thenReturn(1);
         Integer actualKittensLion = lion.getKittens();
         Integer expected = 1;
-        assertEquals(actualKittensLion, expected);
+        assertEquals(expected, actualKittensLion);
     }
 }

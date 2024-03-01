@@ -22,6 +22,6 @@ public class CheckEatMeatFelineTest {
         Mockito.when(feline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> actualEat = feline.eatMeat();
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
-        assertEquals(actualEat, expected);
+        assertEquals(expected, actualEat);
     }
 }

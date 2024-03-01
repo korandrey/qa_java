@@ -32,7 +32,7 @@ public class CheckGetFoodAnimalTest {
     public void checkingWhetherAnimalsAreGettingFood() throws Exception {
         Animal animal = new Animal();
         List<String> actualFood = animal.getFood(animalKind);
-        assertEquals(actualFood, expected);
+        assertEquals(expected, actualFood);
     }
 
 }

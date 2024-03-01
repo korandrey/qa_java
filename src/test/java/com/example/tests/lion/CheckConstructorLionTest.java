@@ -27,6 +27,6 @@ public class CheckConstructorLionTest {
     public void checkingConstructorLion() throws Exception {
         Lion lion = new Lion(sex);
         Boolean actual = lion.doesHaveMane();
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

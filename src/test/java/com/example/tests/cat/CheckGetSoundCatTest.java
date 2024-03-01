@@ -20,6 +20,6 @@ public class CheckGetSoundCatTest {
         Cat cat = new Cat(feline);
         String actualSoundCat = cat.getSound();
         String expected = "Мяу";
-        assertEquals(actualSoundCat, expected);
+        assertEquals(expected, actualSoundCat);
     }
 }
