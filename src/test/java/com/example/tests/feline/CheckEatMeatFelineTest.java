@@ -24,4 +24,26 @@ public class CheckEatMeatFelineTest {
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
         assertEquals(expected, actualEat);
     }
+
+    @Test
+    public void checkingGetFamilyFeline() {
+        String actualFamily = feline.getFamily();
+        String expected = "Кошачьи";
+        assertEquals(expected, actualFamily);
+    }
+
+    @Test
+    public void checkingGetKittensFeline() {
+        Mockito.when(feline.getKittens(1)).thenReturn(1);
+        Integer actualKittens = feline.getKittens();
+        Integer expected = 1;
+        assertEquals(expected, actualKittens);
+    }
+
+    @Test
+    public void checkingGetKittensWithParameterFeline() {
+        Integer actualParameterKittens = feline.getKittens(3);
+        Integer expected = 3;
+        assertEquals(expected, actualParameterKittens);
+    }
 }
